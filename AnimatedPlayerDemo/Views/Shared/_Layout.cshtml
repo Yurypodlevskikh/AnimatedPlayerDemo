@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Animated Player Demo</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/silnaya-ruka.css" asp-append-version="true" />
+    <link href="~/lib/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/lib/fontawesome-free/css/solid.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="stage">
+        @RenderBody()
+    </div>
+
+    <script src="~/js/silnaya-ruka.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

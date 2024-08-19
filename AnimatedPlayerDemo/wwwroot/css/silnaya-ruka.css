@@ -1,0 +1,258 @@
+﻿#activity-monitor {
+    border: 0px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 302.8px;
+    min-width: 400px;
+    background-image: url(/img/PolitYuraWithoutRed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#cover {
+    width: 71%;
+    height: auto;
+    position: relative;
+}
+
+.cover-pieces {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#red-things {
+    left: -1.7%;
+    margin-top: 2%;
+    width: 100%;
+    fill: rgb(196,23,43);
+    position: relative;
+}
+
+/* Left Start */
+.activity-monitor-left {
+    top: 7.3%;
+    left: 18.5%;
+    position: absolute;
+}
+
+.activity-wrapper-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.1px;
+    height: 105.1px;
+}
+/* Without Frequency */
+#stars-wrapper-left {
+    min-height: 42.5px;
+    width: 33px;
+    z-index: 3;
+}
+/* Frequency 600 */
+#stars-wrapper-left-600 {
+    min-height: 18px;
+    width: 13.2px;
+    z-index: 2;
+}
+/* Frequency 200 */
+#stars-wrapper-left-200 {
+    min-height: 18px;
+    width: 13.2px;
+    z-index: 1;
+}
+/* Left End */
+
+/* Right Start */
+.activity-monitor-right {
+    top: 6.9%;
+    right: 36.2%;
+    position: absolute;
+}
+
+.activity-wrapper-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.1px;
+    height: 105.1px;
+}
+/* Without Frequency */
+#stars-wrapper-right {
+    min-height: 38.6px;
+    width: 30px;
+    z-index: 3;
+}
+/* Frequency 600 */
+#stars-wrapper-right-600 {
+    min-height: 15.5px;
+    width: 12px;
+    z-index: 2;
+}
+/* Frequency 200 */
+#stars-wrapper-right-200 {
+    min-height: 15.5px;
+    width: 12px;
+    z-index: 1;
+}
+/* Right End */
+
+/* Player Start */
+#s-ruka-player {
+    bottom: 0;
+    width: 100%;
+}
+
+#a-ruka-infopanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#s-ruka-player-btn {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.player-btn {
+    color: rgb(0, 0, 0);
+    padding: 0.25rem 0.9rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 0.25rem;
+    background-color: rgb(239 239 239);
+}
+
+.player-btn:hover {
+    background-color: rgb(222,226,230);
+}
+
+#track-time {
+    margin-left: 7px;
+    width: 100%;
+}
+
+#track-duration {
+    margin-right: 7px;
+}
+
+#s-ruka-progressbar {
+    background-color: rgb(222,226,230);
+    height: 5px;
+    width: 100%;
+    display: flex;
+}
+
+#s-ruka-progressmeter {
+    background-color: rgb(196,23,43);
+    height: 5px;
+}
+/* Player End */
+
+/* 25% less then 720 */
+@media(min-width: 576px) {
+    #cover {
+        width: 52.5%;
+        /*width: 56.7%;*/
+    }
+
+    #activity-monitor {
+        min-height: 302.8px;
+        /*min-height: 224px;
+        min-width: 400px;*/
+        min-width: 540px;
+    }
+
+    .activity-wrapper-left {
+        width: 105.1px;
+        height: 105.1px;
+    }
+
+    .activity-wrapper-right {
+        width: 105.1px;
+        height: 105.1px;
+    }
+}
+/* 25% less then 960 */
+@media(min-width: 768px) {
+    #cover {
+        width: 52.5%;
+    }
+
+    #activity-monitor {
+        min-height: 403.7px;
+        min-width: 720px;
+    }
+
+    .activity-wrapper-left {
+        width: 140.1px;
+        height: 140.1px;
+    }
+
+    .activity-wrapper-right {
+        width: 140.1px;
+        height: 140.1px;
+    }
+}
+/* 16% less then 1140 */
+@media(min-width: 992px) {
+    #cover {
+        width: 52.5%;
+    }
+
+    #activity-monitor {
+        min-height: 538.27px;
+        min-width: 960px;
+    }
+
+    .activity-wrapper-left {
+        width: 186.9px;
+        height: 186.9px;
+    }
+
+    .activity-wrapper-right {
+        width: 186.9px;
+        height: 186.9px;
+    }
+}
+/* 11% less then 1280 */
+@media(min-width: 1200px) {
+    #cover {
+        width: 52.5%;
+    }
+
+    #activity-monitor {
+        min-height: 640.8px;
+        min-width: 1140px;
+    }
+
+    .activity-wrapper-left {
+        width: 222.5px;
+        height: 222.5px;
+    }
+
+    .activity-wrapper-right {
+        width: 222.5px;
+        height: 222.5px;
+    }
+}
+
+/*@media(min-width: 1400px){
+    #cover {
+        min-height: 720px;
+        min-width: 1280px;
+    }
+    .activity-wrapper-left {
+        width: 250px;
+        height: 250px;
+    }
+    .activity-wrapper-right {
+        width: 250px;
+        height: 250px;
+    }
+}*/
