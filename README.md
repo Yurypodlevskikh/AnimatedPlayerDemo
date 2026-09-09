@@ -60,3 +60,7 @@ web development, audio processing and creative use of frontend technologies.
 
 For a larger full-stack project demonstrating application architecture, authentication, databases and 
 CI/CD, see my SpeedUp project.
+
+## License
+
+This project is provided for demonstration and portfolio purposes.
